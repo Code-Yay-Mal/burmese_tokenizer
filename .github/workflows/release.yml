@@ -5,13 +5,11 @@ on:
       - "v*"
 permissions:
   contents: read
-  id-token: write
 jobs:
   publish:
     runs-on: ubuntu-latest
-    environment: release
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v4
       - run: uv build --no-sources
-      - run: uv publish  # No token needed!
+      - run: uv publish --token ${{ secrets.PYPI_API_TOKEN }}
