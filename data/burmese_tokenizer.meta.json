@@ -1,0 +1,157 @@
+{
+  "model_path": "burmese_tokenizer.model",
+  "vocab_path": "burmese_tokenizer.vocab",
+  "lines_trained": 654100,
+  "model_type": "unigram",
+  "vocab_size": 64000,
+  "character_coverage": 0.9999,
+  "byte_fallback": false,
+  "user_defined_symbols": [
+    "<mask>",
+    "<sep>"
+  ],
+  "evaluation": {
+    "မင်္ဂလာပါ။ ကျွန်တော် စကားပြောချင်ပါတယ်။": {
+      "num_pieces": 5,
+      "pieces": [
+        "▁မင်္ဂလာ",
+        "ပါ။",
+        "▁ကျွန်တော်",
+        "▁စကားပြော",
+        "ချင်ပါတယ်။"
+      ],
+      "ids_head": [
+        1720,
+        773,
+        2640,
+        4191,
+        48756
+      ],
+      "round_trip_ok": true,
+      "compression_ratio": 7.8
+    },
+    "ဒီနေ့ မိုးရွာမလား။": {
+      "num_pieces": 4,
+      "pieces": [
+        "▁ဒီနေ့",
+        "▁မိုးရွာ",
+        "မလား",
+        "။"
+      ],
+      "ids_head": [
+        5082,
+        9898,
+        5004,
+        54
+      ],
+      "round_trip_ok": true,
+      "compression_ratio": 4.5
+    },
+    "မြန်မာဘာသာ စာပိုဒ်တစ်ပုဒ်ကို စမ်းသပ်နေပါတယ်။": {
+      "num_pieces": 5,
+      "pieces": [
+        "▁မြန်မာဘာသာ",
+        "▁စာပိုဒ်",
+        "တစ်ပုဒ်ကို",
+        "▁စမ်းသပ်",
+        "နေပါတယ်။"
+      ],
+      "ids_head": [
+        6136,
+        16063,
+        27505,
+        2565,
+        24151
+      ],
+      "round_trip_ok": true,
+      "compression_ratio": 8.8
+    },
+    "အင်္ဂလိပ်ဘာသာနဲ့ မြန်မာဘာသာ နှစ်ခုလုံး သုံးနိုင်ပါတယ်။": {
+      "num_pieces": 6,
+      "pieces": [
+        "▁အင်္ဂလိပ်ဘာသာ",
+        "နဲ့",
+        "▁မြန်မာဘာသာ",
+        "▁နှစ်ခုလုံး",
+        "▁သုံး",
+        "နိုင်ပါတယ်။"
+      ],
+      "ids_head": [
+        2587,
+        62,
+        6136,
+        29455,
+        466,
+        6037
+      ],
+      "round_trip_ok": true,
+      "compression_ratio": 9.0
+    },
+    "၂၀၂၄ ခုနှစ် ဇန်နဝါရီလ ၁၅ ရက်နေ့": {
+      "num_pieces": 5,
+      "pieces": [
+        "▁၂၀၂၄",
+        "▁ခုနှစ်",
+        "▁ဇန်နဝါရီလ",
+        "▁၁၅",
+        "▁ရက်နေ့"
+      ],
+      "ids_head": [
+        335,
+        48,
+        1206,
+        216,
+        306
+      ],
+      "round_trip_ok": true,
+      "compression_ratio": 6.2
+    },
+    "အပူချိန် ၃၅ ဒီဂရီ စင်တီဂရိတ်": {
+      "num_pieces": 4,
+      "pieces": [
+        "▁အပူချိန်",
+        "▁၃၅",
+        "▁ဒီဂရီ",
+        "▁စင်တီဂရိတ်"
+      ],
+      "ids_head": [
+        2726,
+        1447,
+        1302,
+        6770
+      ],
+      "round_trip_ok": true,
+      "compression_ratio": 7.0
+    },
+    "ဒေါ်လာ ၁၀၀ နဲ့ ကျပ် ၂၀၀၀၀၀": {
+      "num_pieces": 5,
+      "pieces": [
+        "▁ဒေါ်လာ",
+        "▁၁၀၀",
+        "▁နဲ့",
+        "▁ကျပ်",
+        "▁၂၀၀၀၀၀"
+      ],
+      "ids_head": [
+        1332,
+        1249,
+        449,
+        1593,
+        30741
+      ],
+      "round_trip_ok": true,
+      "compression_ratio": 5.2
+    },
+    "_stats": {
+      "avg_compression_ratio": 7.0588235294117645,
+      "round_trip_accuracy": 1.0,
+      "total_samples": 7,
+      "vocab_size": 64000
+    }
+  },
+  "resource_limits": {
+    "max_cpu_percent": 90,
+    "max_memory_percent": 85,
+    "max_disk_percent": 90
+  }
+}
