@@ -1,0 +1,2 @@
+include src/burmese_tokenizer/data/*
+recursive-include src/burmese_tokenizer/data *
