@@ -61,6 +61,10 @@ uv build --no-sources
 # make sure to have pypirc
 uv run twine upload dist/*  or uv publish
 
+# bump version
+uv version --bump patch
+uv version --short
+
 # or publish with gh-action
 git tag v0.1.2 
 git push origin v0.1.2 

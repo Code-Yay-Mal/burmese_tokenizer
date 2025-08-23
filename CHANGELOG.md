@@ -4,21 +4,24 @@ all notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+## [0.1.2] - 2024-12-19
+
 ### added
-- cli interface with rich output formatting
-- utility functions for text validation and vocab management
-- proper package structure with src layout
-- mit license
-- comprehensive documentation
+- github actions workflow for automated releases
+- trusted publishing support for secure package distribution
+- improved build and publish automation
 
 ### changed
-- reorganized code into proper python package structure
-- updated build system to use hatchling
-- improved error handling and validation
+- updated build system to use uv_build
+- enhanced release process with automated workflows
 
-### fixed
-- package structure issues preventing proper builds
-- model path resolution for bundled data files
+## [0.1.1] - 2024-12-19
+
+### added
+- first public release
+- proper package structure and build configuration
+- cli interface with rich output formatting
+- comprehensive documentation and examples
 
 ## [0.1.0] - 2025-08-22
 
