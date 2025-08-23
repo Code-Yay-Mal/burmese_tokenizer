@@ -29,7 +29,10 @@ all notable changes to this project will be documented in this file.
 - basic encode/decode functionality
 - vocab management features
 
-## [0.1.1] - 2025-08-22
+## [0.1.1] - 2024-12-19
 
 ### added
-- cleaned up
+- first public release
+- proper package structure and build configuration
+- cli interface with rich output formatting
+- comprehensive documentation and examples

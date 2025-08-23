@@ -1,6 +1,6 @@
 [project]
-name = "burmese-tokenizer"
-version = "0.1.0"
+name = "burmese_tokenizer"
+version = "0.1.1"
 description = "A simple tokenizer for Burmese text"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -26,6 +26,7 @@ dependencies = [
     "sentencepiece>=0.1.99",
     "click>=8.0.0",
     "rich>=13.0.0",
+    "twine>=6.1.0",
 ]
 
 [project.optional-dependencies]
@@ -50,7 +51,7 @@ Issues = "https://github.com/Code-Yay-Mal/burmese_tokenizer/issues"
 Changelog = "https://github.com/Code-Yay-Mal/burmese_tokenizer/blob/main/CHANGELOG.md"
 
 [project.scripts]
-burmese-tokenizer = "burmese_tokenizer.cli:main"
+burmese_tokenizer = "burmese_tokenizer.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.8.13,<0.9.0"]

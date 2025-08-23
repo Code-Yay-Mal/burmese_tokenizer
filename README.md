@@ -55,6 +55,19 @@ git clone git@github.com:Code-Yay-Mal/burmese_tokenizer.git
 cd burmese_tokenizer
 uv sync --dev
 uv run pytest
+
+uv build
+uv build --no-sources 
+# make sure to have pypirc
+uv run twine upload dist/*  or uv publish
+
+# or publish with gh-action
+git tag v0.1.2 
+git push origin v0.1.2 
+
+# if something goes wrong delete and restart all over again
+git tag -d v0.1.2 && git push origin :refs/tags/v0.1.2 
+
 ```
 
 ## License
