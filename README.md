@@ -1,16 +1,14 @@
 # Burmese Tokenizer
 
-Tokenize Burmese text like a pro. No fancy stuff, just gets the job done.
+Simple, fast Burmese text tokenization. No fancy stuff, just gets the job done.
 
-## Quick Start
+## Install
 
 ```bash
-# Using pip
 pip install burmese-tokenizer
-
-# Using uv (faster)
-uv add burmese-tokenizer
 ```
+
+## Quick Start
 
 ```python
 from burmese_tokenizer import BurmeseTokenizer
@@ -18,62 +16,43 @@ from burmese_tokenizer import BurmeseTokenizer
 tokenizer = BurmeseTokenizer()
 text = "မင်္ဂလာပါ။ နေကောင်းပါသလား။"
 
-# Tokenize
-result = tokenizer.encode(text)
-print(result["pieces"])  # ['▁မင်္ဂလာ', '▁ပါ', '။', '▁နေ', '▁ကောင်း', '▁ပါ', '▁သလား', '။']
+# tokenize
+tokens = tokenizer.encode(text)
+print(tokens["pieces"])
+# ['▁မင်္ဂလာ', '▁ပါ', '။', '▁နေ', '▁ကောင်း', '▁ပါ', '▁သလား', '။']
 
-# Decode
-decoded = tokenizer.decode(result["pieces"])
-print(decoded)  # မင်္ဂလာပါ။ နေကောင်းပါသလား။
+# decode back
+text = tokenizer.decode(tokens["pieces"])
+print(text)
+# မင်္ဂလာပါ။ နေကောင်းပါသလား။
 ```
 
 ## CLI
 
 ```bash
-# Tokenize
+# tokenize
 burmese-tokenizer "မင်္ဂလာပါ။"
 
-# Verbose mode (shows all the details)
+# show details
 burmese-tokenizer -v "မင်္ဂလာပါ။"
 
-# Decode tokens back to text
+# decode tokens
 burmese-tokenizer -d -t "▁မင်္ဂလာ,▁ပါ,။"
 ```
 
 ## API
 
-- `encode(text)` - Chop text into tokens
-- `decode(pieces)` - Glue tokens back together
-- `decode_ids(ids)` - Convert IDs back to text
-- `get_vocab_size()` - How many tokens we know
-- `get_vocab()` - The whole vocabulary
+- `encode(text)` - tokenize text
+- `decode(pieces)` - convert tokens back to text  
+- `decode_ids(ids)` - convert ids to text
+- `get_vocab_size()` - vocabulary size
+- `get_vocab()` - full vocabulary
 
-## Dev Setup
+## Links
 
-```bash
-git clone git@github.com:Code-Yay-Mal/burmese_tokenizer.git
-cd burmese_tokenizer
-uv sync --dev
-uv run pytest
-
-uv build
-uv build --no-sources 
-# make sure to have pypirc
-uv run twine upload dist/*  or uv publish
-
-# bump version
-uv version --bump patch
-uv version --short
-
-# or publish with gh-action
-git tag v0.1.2 
-git push origin v0.1.2 
-
-# if something goes wrong delete and restart all over again
-git tag -d v0.1.2 && git push origin :refs/tags/v0.1.2 
-
-```
+- [PyPI](https://pypi.org/project/burmese-tokenizer/)
+- [Contributing](docs/how_to_contribute.md)
 
 ## License
 
-MIT - do whatever you want with it.
+MIT - Do whatever you want with it.
