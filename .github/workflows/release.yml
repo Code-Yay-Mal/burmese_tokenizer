@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v4
       - run: uv build --no-sources
-      - run: uv publish --trusted-publisher pypi
+      - run: uv publish --trusted-publishing pypi
